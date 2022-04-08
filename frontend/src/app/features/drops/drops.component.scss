@@ -1,0 +1,18 @@
+.DropsComponent {
+    &-header {
+        padding-top: 16px;
+        width: 75%;
+    }
+    &-headerImage {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+    &-content {
+        padding: 16px;
+        width: 75%;
+    }
+    &-nftContainer {
+        width: 25%;
+    }
+}

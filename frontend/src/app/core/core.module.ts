@@ -9,15 +9,19 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { NftComponent } from './components/nft/nft.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
     NavBarComponent,
+    NftComponent,
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
     MatButtonModule,
+    MatCardModule,
     MatIconModule,
     MatInputModule,
     MatMenuModule,
@@ -27,6 +31,7 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [
     NavBarComponent,
+    NftComponent
   ]
 })
 export class CoreModule { }

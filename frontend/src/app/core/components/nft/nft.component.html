@@ -1,0 +1,11 @@
+<mat-card class="NftComponent" fxLayout="column">
+    <img fxFlex="75" class="NftComponent-image" mat-card-image src="{{nft.src}}" alt="NFT Image">
+    <mat-card-content fxFlex="25">
+        <p>{{nft.title}}</p>
+        <p>By {{nft.creator}}</p>
+        <p>#{{nft.edition}}/{{nft.numberOfEditions}}</p>
+    </mat-card-content>
+    <mat-card-actions fxFlex *ngIf="nft.hasAction" align="end">
+      <button mat-raised-button color="accent">{{nft.action}}</button>
+    </mat-card-actions>
+  </mat-card>
