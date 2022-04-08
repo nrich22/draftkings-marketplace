@@ -1,2 +1,13 @@
 .NftComponent {
+    &-title, &-price {
+        font-weight: bold;
+    }
+    &-price {
+        margin-top: 4px;
+    }
+    &-lineItem {
+        color: grey;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
 }
