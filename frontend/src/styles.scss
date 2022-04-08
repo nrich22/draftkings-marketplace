@@ -1,0 +1,124 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+* {
+    font-family: 'Exo', monospace;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+html, body {
+    margin: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+$draftKings-green: (
+    50 : #ecf6e2,
+    100 : #d0e8b6,
+    200 : #b1d886,
+    300 : #91c856,
+    400 : #7abd31,
+    500 : #62b10d,
+    600 : #5aaa0b,
+    700 : #50a109,
+    800 : #469807,
+    900 : #348803,
+    A100 : #cbffb4,
+    A200 : #a7ff81,
+    A400 : #84ff4e,
+    A700 : #72ff35,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$draftKings-black: (
+    50 : #e4e4e5,
+    100 : #bcbcbd,
+    200 : #8f9091,
+    300 : #626365,
+    400 : #414144,
+    500 : #1f2023,
+    600 : #1b1c1f,
+    700 : #17181a,
+    800 : #121315,
+    900 : #0a0b0c,
+    A100 : #52ffff,
+    A200 : #1fffff,
+    A400 : #00ebeb,
+    A700 : #00d2d2,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+// Define a light theme
+$light-primary: mat.define-palette($draftKings-black);
+$light-accent: mat.define-palette($draftKings-green);
+$light-theme: mat.define-light-theme((
+ color: (
+   primary: $light-primary,
+   accent: $light-accent,
+ )
+));
+
+// Define a dark theme
+$dark-primary: mat.define-palette($draftKings-black);
+$dark-accent: mat.define-palette($draftKings-green);
+$dark-theme: mat.define-dark-theme((
+ color: (
+   primary: $dark-primary,
+   accent: $dark-accent,
+ )
+));
+
+@include mat.all-component-themes($light-theme);
+
+
+.darkMode {
+    @include mat.all-component-themes($dark-theme);
+}

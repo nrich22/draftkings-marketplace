@@ -1,0 +1,32 @@
+<mat-toolbar class="NavBarComponent" color="primary">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxLayout="row" fxLayoutGap="8px">
+            <img height="50px" src="https://www.draftkings.com/dkjs/header/v1/web/3c7f6423e4f3c823138b8988fc759353.png"/>
+            <button fxHide.lt-md mat-button [routerLink]="'drops'">Drops</button>
+            <button fxHide.lt-md mat-button [routerLink]="'auction'">Auction</button>
+            <button fxHide.lt-md mat-button [routerLink]="'browse'">Browse</button>
+            <button fxHide.lt-md mat-button [routerLink]="'portfolio'">Portfolio</button>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <mat-form-field *ngIf="isSearch" class="NavBarComponent-search">
+                <input #searchBar placeholder="search" matInput>
+              </mat-form-field>
+            <button mat-icon-button aria-label="Search" (click)="toggleSearch()" appearance="fill">
+                <mat-icon>search</mat-icon>
+            </button>
+            <button mat-icon-button aria-label="Toggle Light Mode">
+                <mat-icon *ngIf="!isDarkMode" (click)="toggleDarkMode(true)">dark_mode</mat-icon>
+                <mat-icon *ngIf="isDarkMode" (click)="toggleDarkMode(false)">light_mode</mat-icon>
+            </button>
+            <button fxHide.gt-md mat-icon-button [matMenuTriggerFor]="mobileMenu" aria-label="Mobile Menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #mobileMenu="matMenu">
+                <button mat-menu-item>Drops</button>
+                <button mat-menu-item>Auction</button>
+                <button mat-menu-item>Browse</button>
+                <button mat-menu-item>Portfolio</button>
+              </mat-menu>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
