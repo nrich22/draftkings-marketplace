@@ -1,17 +1,18 @@
 <div class="DropsComponent" fxLayout="column" fxLayoutAlign="center center">
     <div class="DropsComponent-header">
-        <a href="https://marketplace.draftkings.com/lp/22-augusta-ga-golf-nft-collection" target="_blank">
+        <a href="{{ banner.destinationUrl }}" target="_blank">
             <img 
                 class="DropsComponent-headerImage"
-                src="https://marketplace.draftkings.com/_assets/banners/images/294d19ba-7404-443f-a77e-ff539f51d4cd.gif">
+                src="{{ banner.url }}">
         </a>
     </div>
     
     <div class="DropsComponent-content" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="16px">
         <mat-card-title>Featured</mat-card-title>
-        <div class="DropsComponent-nftRow" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+        <div class="DropsComponent-nftRow" fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="16px grid">
             <div 
             class="DropsComponent-nftContainer"
+            fxFlex="33%" fxFlex.lg="33%" fxFlex.md="50%" fxFlex.lt-md="100%"
             *ngFor="let nft of nfts">
             <app-nft class="DropsComponent-nft" [nft]="nft"></app-nft>
             </div>

@@ -1,7 +1,7 @@
 export interface Nft {
     title: string;
     src: string;
-    price: string;
+    price: number;
     creator: string;
     edition: number | null;
     numberOfEditions: number;

@@ -7,26 +7,60 @@
             <button fxHide.lt-md mat-button [routerLink]="'browse'">Browse</button>
             <button fxHide.lt-md mat-button [routerLink]="'portfolio'">Portfolio</button>
         </div>
-        <div fxLayout="row" fxLayoutAlign="space-between center">
-            <mat-form-field *ngIf="isSearch" class="NavBarComponent-search">
-                <input #searchBar placeholder="search" matInput>
-              </mat-form-field>
-            <button mat-icon-button aria-label="Search" (click)="toggleSearch()" appearance="fill">
-                <mat-icon>search</mat-icon>
-            </button>
-            <button mat-icon-button aria-label="Toggle Light Mode">
-                <mat-icon *ngIf="!isDarkMode" (click)="toggleDarkMode(true)">dark_mode</mat-icon>
-                <mat-icon *ngIf="isDarkMode" (click)="toggleDarkMode(false)">light_mode</mat-icon>
-            </button>
-            <button fxHide.gt-md mat-icon-button [matMenuTriggerFor]="mobileMenu" aria-label="Mobile Menu">
-                <mat-icon>menu</mat-icon>
-            </button>
-            <mat-menu #mobileMenu="matMenu">
-                <button mat-menu-item>Drops</button>
-                <button mat-menu-item>Auction</button>
-                <button mat-menu-item>Browse</button>
-                <button mat-menu-item>Portfolio</button>
-              </mat-menu>
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+            <div class="NavBarComponent-balance" fxLayout="row" fxLayoutGap="8px">
+                <p>Balance:</p>
+                <p>$0.00</p>
+            </div>
+            <div fxLayout="row">
+                <a
+                    class="NavBarComponent-deposit"
+                    fxLayout="row" fxLayoutAlign="center center"
+                    color="accent"
+                    fxHide.lt-md mat-raised-button
+                    href="https://myaccount.draftkings.com/login?intendedSiteExp=US-MKT&returnPath=/"
+                    target="_blank">
+                    DEPOSIT
+                </a>
+                <button color="accent" mat-icon-button aria-label="Toggle Light Mode">
+                    <mat-icon *ngIf="!isDarkMode" (click)="toggleDarkMode(true)">dark_mode</mat-icon>
+                    <mat-icon *ngIf="isDarkMode" (click)="toggleDarkMode(false)">light_mode</mat-icon>
+                </button>
+                <button color="accent" fxHide.lt-md mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="Profile">
+                    <mat-icon>account_circle</mat-icon>
+                </button>
+                <mat-menu #profileMenu="matMenu">
+                    <a mat-menu-item 
+                        href="https://myaccount.draftkings.com/login?intendedSiteExp=US-MKT&returnPath=/"
+                        target="_blank">
+                        Account Information
+                    </a>
+                    <a  mat-menu-item 
+                        href="https://www.shopdraftkings.com/?_gl=1*5i4ryt*_ga*MjA4ODM1NTM2OS4xNjQ5MzcwMzE3*_ga_QG8WHJSQMJ*MTY0OTQ0MTc1OC4zLjEuMTY0OTQ0Mjg0MC4w"
+                        target="_blank">
+                        DK Shop
+                    </a>
+                    <a mat-menu-item
+                        href="https://help.draftkings.com/hc/en-us"
+                        target="_blank">
+                        Contact Us
+                    </a>
+                    <a mat-menu-item 
+                        href="https://myaccount.draftkings.com/login?intendedSiteExp=US-MKT&returnPath=/"
+                        target="_blank">
+                        Sign Out
+                    </a>
+                </mat-menu>
+                <button fxHide.gt-md mat-icon-button [matMenuTriggerFor]="mobileMenu" aria-label="Mobile Menu">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <mat-menu #mobileMenu="matMenu">
+                    <button mat-menu-item>Drops</button>
+                    <button mat-menu-item>Auction</button>
+                    <button mat-menu-item>Browse</button>
+                    <button mat-menu-item>Portfolio</button>
+                </mat-menu>
+            </div>
         </div>
     </mat-toolbar-row>
 </mat-toolbar>

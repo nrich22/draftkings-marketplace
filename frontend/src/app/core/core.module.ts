@@ -32,6 +32,6 @@ import { MatCardModule } from '@angular/material/card';
   exports: [
     NavBarComponent,
     NftComponent
-  ]
+  ],
 })
 export class CoreModule { }

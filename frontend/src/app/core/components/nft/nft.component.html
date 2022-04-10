@@ -1,12 +1,15 @@
 <mat-card class="NftComponent" fxLayout="column">
-    <img fxFlex="75" class="NftComponent-image" mat-card-image src="{{nft.src}}" alt="NFT Image">
-    <div color="primary" fxFlex="25">
+    <img fxFlex="50" class="NftComponent-image" mat-card-image src="{{nft.src}}" alt="NFT Image">
+    <div fxFlex="30" color="primary">
         <p class="NftComponent-title">{{nft.title}}</p>
         <p class="NftComponent-lineItem">By {{nft.creator}}</p>
         <p class="NftComponent-lineItem"> #{{nft.edition}}/{{nft.numberOfEditions}}</p>
-        <p class="NftComponent-price">{{nft.price}}</p>
+        <p class="NftComponent-price">${{nft.price}}</p>
     </div>
-    <mat-card-actions fxFlex *ngIf="nft.hasAction" align="end">
-      <button class="NftComponent-button" mat-raised-button color="accent">{{nft.action}}</button>
+    <mat-card-actions fxFlex="20" align="end">
+      <button [disabled]="!nft.hasAction" class="NftComponent-button" fxLayout="row" fxLayoutAlign="start center" mat-button color="accent">
+        {{nft.action}}
+        <mat-icon *ngIf="nft.hasAction">double_arrow</mat-icon>
+      </button>
     </mat-card-actions>
   </mat-card>
