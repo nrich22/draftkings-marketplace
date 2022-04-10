@@ -9,10 +9,16 @@ import { CoreModule } from '../core/core.module';
 
 import { DropsComponent } from './drops/drops.component';
 import { FeaturesRoutingModule } from './features-routing.module';
+import { AuctionComponent } from './auction/auction.component';
+import { BrowseComponent } from './browse/browse.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
-    DropsComponent
+    DropsComponent,
+    AuctionComponent,
+    BrowseComponent,
+    PortfolioComponent
   ],
   imports: [
     CommonModule,
