@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = DraftKingsMarketplace.Shared.Services
+build_property.ProjectDir = /Users/nickricciarelli/Development/draftkings-marketplace/backend/DraftKingsMarketplace/DraftKingsMarketplace.Shared.Services/

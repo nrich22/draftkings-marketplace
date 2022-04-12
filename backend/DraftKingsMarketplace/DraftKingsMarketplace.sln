@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftKingsMarketplace.Datab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftKingsMarketplace.Api", "DraftKingsMarketplace.Api.Site\DraftKingsMarketplace.Api\DraftKingsMarketplace.Api.csproj", "{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftKingsMarketplace.Shared.Models", "DraftKingsMarketplace.Shared.Services\DraftKingsMarketplace.Shared.Models\DraftKingsMarketplace.Shared.Models.csproj", "{245B2645-EF3C-44D0-8C49-140199D30446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{245B2645-EF3C-44D0-8C49-140199D30446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245B2645-EF3C-44D0-8C49-140199D30446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245B2645-EF3C-44D0-8C49-140199D30446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245B2645-EF3C-44D0-8C49-140199D30446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +57,6 @@ Global
 		{B78CBFF5-7840-4447-8384-F27408BDAFE4} = {BB03E38E-5455-4161-9315-8CB1B0FC2DEF}
 		{2718FD51-0862-4D4B-AD71-3004FF0743D1} = {64CCAC91-D5A9-45F4-9D88-7D7BBEEA0DEB}
 		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC} = {BB03E38E-5455-4161-9315-8CB1B0FC2DEF}
+		{245B2645-EF3C-44D0-8C49-140199D30446} = {271ADA68-ED05-40DA-867F-DFCD3A460525}
 	EndGlobalSection
 EndGlobal
