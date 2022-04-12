@@ -1,0 +1,9 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Visual Studio
+/.vs
+
+# System Files
+*/.DS_Store
+.DS_Store
+Thumbs.db

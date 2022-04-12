@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{271ADA68-ED05-40DA-867F-DFCD3A460525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftKingsMarketplace.Shared.Services", "DraftKingsMarketplace.Shared.Services\DraftKingsMarketplace.Shared.Services.csproj", "{7E8CE661-E698-4BDE-AD4B-6DFF3DBC762A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{BB03E38E-5455-4161-9315-8CB1B0FC2DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftKingsMarketplace.Api.Site", "DraftKingsMarketplace.Api.Site\DraftKingsMarketplace.Api.Site.csproj", "{B78CBFF5-7840-4447-8384-F27408BDAFE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{64CCAC91-D5A9-45F4-9D88-7D7BBEEA0DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftKingsMarketplace.Database", "DraftKingsMarketplace.Database\DraftKingsMarketplace.Database.csproj", "{2718FD51-0862-4D4B-AD71-3004FF0743D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftKingsMarketplace.Api", "DraftKingsMarketplace.Api.Site\DraftKingsMarketplace.Api\DraftKingsMarketplace.Api.csproj", "{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E8CE661-E698-4BDE-AD4B-6DFF3DBC762A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8CE661-E698-4BDE-AD4B-6DFF3DBC762A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8CE661-E698-4BDE-AD4B-6DFF3DBC762A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8CE661-E698-4BDE-AD4B-6DFF3DBC762A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78CBFF5-7840-4447-8384-F27408BDAFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78CBFF5-7840-4447-8384-F27408BDAFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78CBFF5-7840-4447-8384-F27408BDAFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78CBFF5-7840-4447-8384-F27408BDAFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2718FD51-0862-4D4B-AD71-3004FF0743D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2718FD51-0862-4D4B-AD71-3004FF0743D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2718FD51-0862-4D4B-AD71-3004FF0743D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2718FD51-0862-4D4B-AD71-3004FF0743D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1ACBDC3-F9A7-4CD5-AB8A-3D90FB83FE7E}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E8CE661-E698-4BDE-AD4B-6DFF3DBC762A} = {271ADA68-ED05-40DA-867F-DFCD3A460525}
+		{B78CBFF5-7840-4447-8384-F27408BDAFE4} = {BB03E38E-5455-4161-9315-8CB1B0FC2DEF}
+		{2718FD51-0862-4D4B-AD71-3004FF0743D1} = {64CCAC91-D5A9-45F4-9D88-7D7BBEEA0DEB}
+		{CE609D38-3B4B-4FCA-996A-DF0186E96EEC} = {BB03E38E-5455-4161-9315-8CB1B0FC2DEF}
+	EndGlobalSection
+EndGlobal
