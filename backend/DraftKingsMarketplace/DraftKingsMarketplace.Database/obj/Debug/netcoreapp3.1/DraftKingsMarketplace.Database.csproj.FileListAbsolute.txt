@@ -1,6 +1,0 @@
-/Users/nickricciarelli/Development/draftkings-marketplace/backend/DraftKingsMarketplace/DraftKingsMarketplace.Database/obj/Debug/netcoreapp3.1/DraftKingsMarketplace.Database.csproj.AssemblyReference.cache
-/Users/nickricciarelli/Development/draftkings-marketplace/backend/DraftKingsMarketplace/DraftKingsMarketplace.Database/obj/Debug/netcoreapp3.1/DraftKingsMarketplace.Database.GeneratedMSBuildEditorConfig.editorconfig
-/Users/nickricciarelli/Development/draftkings-marketplace/backend/DraftKingsMarketplace/DraftKingsMarketplace.Database/obj/Debug/netcoreapp3.1/DraftKingsMarketplace.Database.AssemblyInfoInputs.cache
-/Users/nickricciarelli/Development/draftkings-marketplace/backend/DraftKingsMarketplace/DraftKingsMarketplace.Database/obj/Debug/netcoreapp3.1/DraftKingsMarketplace.Database.AssemblyInfo.cs
-/Users/nickricciarelli/Development/draftkings-marketplace/backend/DraftKingsMarketplace/DraftKingsMarketplace.Database/obj/Debug/netcoreapp3.1/DraftKingsMarketplace.Database.csproj.CoreCompileInputs.cache
-/Users/nickricciarelli/Development/draftkings-marketplace/backend/DraftKingsMarketplace/DraftKingsMarketplace.Database/obj/Debug/netcoreapp3.1/DraftKingsMarketplace.Database.MvcApplicationPartsAssemblyInfo.cache
