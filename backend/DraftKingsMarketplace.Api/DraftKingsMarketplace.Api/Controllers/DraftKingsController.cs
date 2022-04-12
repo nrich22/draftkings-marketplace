@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using DraftKingsMarketplace.Api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace DraftKingsMarketplace.Api.Controllers
 {
     [ApiController]
-    [Route("v1")]
+    [Route("marketplace")]
+    [Authorize]
     public class DraftKingsController : ControllerBase
     {
         private readonly ILogger<DraftKingsController> _logger;
@@ -19,6 +21,7 @@ namespace DraftKingsMarketplace.Api.Controllers
         }
 
         [HttpGet]
+        [Route("drops")]
         public IEnumerable<CollectibleDrop> Get()
         {
             return null;
