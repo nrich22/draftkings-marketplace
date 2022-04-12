@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Queries\" />
+    <None Remove="QueryHandlers\" />
+    <None Remove="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Queries\" />
+    <Folder Include="QueryHandlers\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+</Project>
