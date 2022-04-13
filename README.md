@@ -69,22 +69,30 @@ npm start
 ```
 
 ### UI Dark Mode
+
 Drops Home Page
+
 ![Screen Shot 2022-04-13 at 5 07 41 PM](https://user-images.githubusercontent.com/15204516/163270830-0f7cb605-6787-4142-b4e9-bbef3e6359a9.png)
 ![Screen Shot 2022-04-13 at 5 23 39 PM](https://user-images.githubusercontent.com/15204516/163272883-54260a06-77f5-42e7-b2e5-869074326a71.png)
 View Drop
+
 ![Screen Shot 2022-04-13 at 5 07 52 PM](https://user-images.githubusercontent.com/15204516/163270912-ba658bda-25ae-43a7-86f8-0df79ecc9673.png)
 Mobile
+
 ![Screen Shot 2022-04-13 at 5 32 35 PM](https://user-images.githubusercontent.com/15204516/163274128-4142b697-2b87-4a2a-9309-1a24f0b48725.png)
 ![Screen Shot 2022-04-13 at 5 42 01 PM](https://user-images.githubusercontent.com/15204516/163275220-f51f64fe-35d1-4fde-b07e-7534f8d55ef8.png)
 
 ### UI Light Mode
+
 Drops Home Page
+
 ![Screen Shot 2022-04-13 at 5 06 58 PM](https://user-images.githubusercontent.com/15204516/163270700-c1b18b2c-38bf-473e-a8af-e96904c58588.png)
 ![Screen Shot 2022-04-13 at 5 07 29 PM](https://user-images.githubusercontent.com/15204516/163270804-afd99f89-475e-4f2b-9604-f01765d88b46.png)
 View Drop
+
 ![Screen Shot 2022-04-13 at 5 23 03 PM](https://user-images.githubusercontent.com/15204516/163272792-1755cc16-7c89-4af6-b754-3307f6aa34a9.png)
 Mobile
+
 ![Screen Shot 2022-04-13 at 5 32 42 PM](https://user-images.githubusercontent.com/15204516/163274195-ee2eccf3-9d46-4279-b65f-80f4d162681b.png)
 ![Screen Shot 2022-04-13 at 5 41 21 PM](https://user-images.githubusercontent.com/15204516/163275155-83654b8b-64a8-42f3-8b0d-9958d9dcb6da.png)
 
