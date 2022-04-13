@@ -71,7 +71,9 @@ npm start
 ### UI Light Mode
 ![Screen Shot 2022-04-13 at 5 06 58 PM](https://user-images.githubusercontent.com/15204516/163270700-c1b18b2c-38bf-473e-a8af-e96904c58588.png)
 ![Screen Shot 2022-04-13 at 5 07 29 PM](https://user-images.githubusercontent.com/15204516/163270804-afd99f89-475e-4f2b-9604-f01765d88b46.png)
+![Screen Shot 2022-04-13 at 5 23 03 PM](https://user-images.githubusercontent.com/15204516/163272792-1755cc16-7c89-4af6-b754-3307f6aa34a9.png)
 
 ### UI Dark Mode
 ![Screen Shot 2022-04-13 at 5 07 41 PM](https://user-images.githubusercontent.com/15204516/163270830-0f7cb605-6787-4142-b4e9-bbef3e6359a9.png)
+![Screen Shot 2022-04-13 at 5 23 39 PM](https://user-images.githubusercontent.com/15204516/163272883-54260a06-77f5-42e7-b2e5-869074326a71.png)
 ![Screen Shot 2022-04-13 at 5 07 52 PM](https://user-images.githubusercontent.com/15204516/163270912-ba658bda-25ae-43a7-86f8-0df79ecc9673.png)
