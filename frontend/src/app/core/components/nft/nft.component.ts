@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Nft } from '../../models/nft';
+import { CollectibleDrop } from '../../models/collectibleDrops';
 
 @Component({
   selector: 'app-nft',
@@ -7,7 +7,7 @@ import { Nft } from '../../models/nft';
   styleUrls: ['./nft.component.scss']
 })
 export class NftComponent implements OnInit {
-  @Input() nft!: Nft;
+  @Input() collectibleDrop!: CollectibleDrop;
 
   constructor() { }
 
