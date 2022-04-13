@@ -1,5 +1,5 @@
-<div class="DropsComponent" fxLayout="column" fxLayoutAlign="center center">
-    <div *ngIf="banner" class="DropsComponent-header">
+<div *ngIf="banner && collectibleDrops; else loadingSpinner" class="DropsComponent" fxLayout="column" fxLayoutAlign="center center">
+    <div class="DropsComponent-header">
         <a href="{{ banner.destinationUrl }}" target="_blank">
             <img 
                 class="DropsComponent-headerImage"
@@ -9,7 +9,7 @@
     
     <div class="DropsComponent-content" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="16px">
         <mat-card-title>Featured</mat-card-title>
-        <div *ngIf="collectibleDrops" class="DropsComponent-nftRow" fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="16px grid">
+        <div class="DropsComponent-nftRow" fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="16px grid">
             <div 
             class="DropsComponent-nftContainer"
             fxFlex="33%" fxFlex.md="50%" fxFlex.lt-md="100%"
@@ -19,3 +19,9 @@
         </div>
     </div>
 </div>
+
+<ng-template #loadingSpinner>
+    <div class="Loading" fxLayout="column" fxLayoutAlign="center center">
+      <mat-spinner color="accent"></mat-spinner>
+    </div>
+</ng-template>

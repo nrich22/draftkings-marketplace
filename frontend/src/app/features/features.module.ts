@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CoreModule } from '../core/core.module';
 
 import { DropsComponent } from './drops/drops.component';
@@ -30,6 +31,7 @@ import { ViewDropComponent } from './view-drop/view-drop.component';
     MatCardModule,
     MatExpansionModule,
     MatIconModule,
+    MatProgressSpinnerModule,
     FeaturesRoutingModule
   ], 
   exports: [ ]

@@ -1,4 +1,4 @@
-<div *ngIf="collectibleDrop" class="ViewDropComponent" fxLayout="row" fxLayoutAlign="center center">
+<div *ngIf="collectibleDrop; else loadingSpinner" class="ViewDropComponent" fxLayout="row" fxLayoutAlign="center center">
     <img fxFlex=50 src="{{collectibleDrop.thumbnailUrl}}" alt="NFT Image">
     <div fxFlex=50 class="ViewDropComponent-details" fxLayout="column" fxLayoutAlign="start start">
         <p class="ViewDropComponent-collection">{{collectibleDrop.collectionName}}</p>
@@ -24,3 +24,9 @@
     </a>
     </div>
 </div>
+
+<ng-template #loadingSpinner>
+    <div class="Loading" fxLayout="column" fxLayoutAlign="center center">
+      <mat-spinner color="accent"></mat-spinner>
+    </div>
+</ng-template>
