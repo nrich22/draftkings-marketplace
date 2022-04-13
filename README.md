@@ -55,6 +55,8 @@ Make sure db instance is running.
 Open draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api.sln in Visual Studio and Set DraftKingsMarketplace.Api as Start Up Project. Run Project in Visual Studio and wait for
 new browser tab to open to https://localhost:5001/api/marketplace.
 
+View swagger.jsonp openapi: https://localhost:5001/swagger/v1/swagger.json
+
 
 ### Run Frontend Angular Project
 
