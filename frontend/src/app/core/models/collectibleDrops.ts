@@ -1,4 +1,5 @@
 export interface CollectibleDrop {
+    id: number;
     salePrice: number;
     saleCurrencyCode: string;
     remainingQuantity: number;

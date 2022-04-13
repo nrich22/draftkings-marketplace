@@ -21,4 +21,8 @@ export class DraftKingsService extends DataService{
   getDrops(): Observable<CollectibleDrop[]> {
     return super._get<CollectibleDrop[]>(`marketplace/drops/`);
   }
+
+  getDropById(id: number): Observable<CollectibleDrop> {
+    return super._get<CollectibleDrop>(`marketplace/drops/${id}/`);
+  }
 }

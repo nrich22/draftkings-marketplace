@@ -1,17 +1,26 @@
-<div class="ViewDropComponent" fxLayout="row" fxLayoutAlign="center center">
-    <div fxFlex=50 class="ViewDropComponent-nft">
-        <img src="{{collectibleDrop.thumbnailUrl}}" alt="NFT Image">
-    </div>
+<div *ngIf="collectibleDrop" class="ViewDropComponent" fxLayout="row" fxLayoutAlign="center center">
+    <img fxFlex=50 src="{{collectibleDrop.thumbnailUrl}}" alt="NFT Image">
     <div fxFlex=50 class="ViewDropComponent-details" fxLayout="column" fxLayoutAlign="start start">
-        <p>{{collectibleDrop.collectionName}}</p>
+        <p class="ViewDropComponent-collection">{{collectibleDrop.collectionName}}</p>
         <h1>{{collectibleDrop.name}}</h1>
-        <div fxLayout="row" ffxLayoutAlign="space-between start">
-            <b>{{collectibleDrop.salePrice}}</b>
-            <b>{{collectibleDrop.remainingQuantity}} Remain</b>
-        </div>
-        <p>${{collectibleDrop.salePrice}}</p>
-        <button class="ViewDropComponent-button" mat-raised-button color="accent">
-            Buy Now
-        </button>
+        <p class="ViewDropComponent-price">${{collectibleDrop.salePrice}}</p>
+        <p class="ViewDropComponent-quantity">{{collectibleDrop.remainingQuantity}} Remain</p>
+        <p class="ViewDropComponent-description">{{collectibleDrop.description}}</p>
+        <p class="ViewDropComponent-supplier">Supplied By: {{collectibleDrop.partnerName}}</p>
+        <p class="ViewDropComponent-addr">Contract Address: 
+            <a  href="https://polygonscan.com/token/{{collectibleDrop.contractAddress}}/"
+                target="_blank">
+                {{collectibleDrop.contractAddress}}
+            </a>
+        </p>
+        <p class="ViewDropComponent-block">Blockchain: {{collectibleDrop.blockchainName}}</p>
+        <a
+        class="ViewDropComponent-button" mat-raised-button
+        color="primary"
+        (click)="buyNow()"
+        href="{{collectibleDrop.dropItemDescriptionLink}}"
+        target="_blank">
+        Buy Now
+    </a>
     </div>
 </div>

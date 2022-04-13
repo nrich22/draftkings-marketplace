@@ -7,7 +7,14 @@
         <p class="NftComponent-price">${{collectibleDrop.salePrice}}</p>
     </div>
     <mat-card-actions fxFlex="20" align="end">
-      <button [disabled]="!collectibleDrop.hasPreferredAccess" class="NftComponent-button" fxLayout="row" fxLayoutAlign="start center" mat-button color="accent">
+      <button 
+        [disabled]="!collectibleDrop.hasPreferredAccess"
+        class="NftComponent-button"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        mat-button 
+        color="accent"
+        (click)="viewDrop(collectibleDrop.id)">
         {{collectibleDrop.hasPreferredAccess ? 'Join Drop' : 'Sold Out'}}
         <mat-icon *ngIf="collectibleDrop.hasPreferredAccess">double_arrow</mat-icon>
       </button>

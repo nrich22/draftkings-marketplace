@@ -1,0 +1,11 @@
+.ViewDropComponent {
+    &-price, &-quantity {
+        font-weight: bold;
+    }
+    &-collection, &-description {
+        color: grey;
+    }
+    &-button, &-description {
+        width: 65%;
+    }
+}
