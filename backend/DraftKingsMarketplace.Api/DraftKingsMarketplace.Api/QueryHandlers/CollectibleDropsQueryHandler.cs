@@ -22,12 +22,13 @@ namespace DraftKingsMarketplace.Api.QueryHandlers
         {
             try
             {
+                // Get all drops from the db
                 var drops = await Task.FromResult(_context.Drops.ToList());
                 return drops;
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine("Error: " + e.Message);
             }
 
             return null;

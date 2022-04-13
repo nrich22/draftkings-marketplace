@@ -21,12 +21,13 @@ namespace DraftKingsMarketplace.Api.QueryHandlers
         {
             try
             {
+                // Get most recently added banner in the db
                 var banner = await Task.FromResult(_context.Banners.OrderByDescending(banner => banner.Id).FirstOrDefault());
                 return banner;
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine("Error:" + e.Message);
             }
 
             return null;
