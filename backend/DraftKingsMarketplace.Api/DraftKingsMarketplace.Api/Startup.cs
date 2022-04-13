@@ -1,6 +1,10 @@
-﻿using DraftKingsMarketplace.Api.Models;
+﻿using System.Reflection;
+using DraftKingsMarketplace.Api.Models;
+using DraftKingsMarketplace.Api.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -20,6 +24,13 @@ namespace DraftKingsMarketplace.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<DraftKingsDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("Default"),
+                    b => b.MigrationsAssembly(typeof(DraftKingsDbContext).Assembly.FullName)));
+
+            services.AddMediatR(typeof(Startup).Assembly);
+
             services.AddControllers();
 
             //Swagger configuration
@@ -27,6 +38,7 @@ namespace DraftKingsMarketplace.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DraftKings", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,8 +54,6 @@ namespace DraftKingsMarketplace.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

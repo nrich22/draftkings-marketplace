@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using DraftKingsMarketplace.Api.Models;
+﻿using System.Threading.Tasks;
+using DraftKingsMarketplace.Api.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -7,22 +8,29 @@ using Microsoft.Extensions.Logging;
 namespace DraftKingsMarketplace.Api.Controllers
 {
     [ApiController]
-    [Route("marketplace")]
-    [Authorize]
+    [Route("api/marketplace")]
+    [AllowAnonymous]
     public class DraftKingsController : ControllerBase
     {
+        private readonly IMediator _mediator;
+
         private readonly ILogger<DraftKingsController> _logger;
 
-        public DraftKingsController(ILogger<DraftKingsController> logger)
+        public DraftKingsController(
+            ILogger<DraftKingsController> logger,
+            IMediator mediator)
         {
             _logger = logger;
+            _mediator = mediator;
         }
 
         [HttpGet]
         [Route("drops")]
-        public IEnumerable<CollectibleDrop> Get()
+        public async Task<ActionResult> GetDrops()
         {
-            return null;
+            var drops = await _mediator.Send(new CollectibleDropsQuery());
+
+            return Ok(drops);
         }
     }
 }

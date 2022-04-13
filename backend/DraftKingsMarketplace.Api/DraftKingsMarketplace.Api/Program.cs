@@ -12,7 +12,6 @@ namespace DraftKingsMarketplace.Api
             var config = new ConfigurationBuilder()
                 .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
                 .AddJsonFile("appsettings.json")
-                .AddUserSecrets<Program>()
                 .Build();
 
             var connectionString = config.GetConnectionString("Default");

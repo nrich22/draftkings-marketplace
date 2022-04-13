@@ -8,7 +8,7 @@ namespace DraftKingsMarketplace.Api.Models
         [Key]
         public int Id { get; set; }
 
-        public decimal SalePrice { get; set; }
+        public decimal? SalePrice { get; set; }
 
         public string SaleCurrencyCode { get; set; }
 
@@ -18,7 +18,7 @@ namespace DraftKingsMarketplace.Api.Models
 
         public string DropItemInfoTitle { get; set; }
 
-        public DateTime DropDate { get; set; }
+        public DateTime? DropDate { get; set; }
 
         public bool HasPreferredAccess { get; set; }
 
@@ -26,15 +26,15 @@ namespace DraftKingsMarketplace.Api.Models
 
         public string DropItemDescriptionLink { get; set; }
 
-        public DateTime PreferredAccessStartTime { get; set; }
+        public DateTime? PreferredAccessStartTime { get; set; }
 
-        public DateTime PreferredAccessEndTime { get; set; }
+        public DateTime? PreferredAccessEndTime { get; set; }
 
-        public decimal PreferredAccessPrice { get; set; }
+        public decimal? PreferredAccessPrice { get; set; }
 
         public string MerchandiseType { get; set; }
 
-        public DateTime VisibleDate { get; set; }
+        public DateTime? VisibleDate { get; set; }
 
         public string CollectibleKey { get; set; }
 
@@ -74,11 +74,11 @@ namespace DraftKingsMarketplace.Api.Models
 
         public string SupplierTermsOfServiceUrl { get; set; }
 
-        public decimal RoyaltyFeeRate { get; set; }
+        public decimal? RoyaltyFeeRate { get; set; }
 
         public string RarityCallout { get; set; }
 
-        public decimal TransactionFeeRate { get; set; }
+        public decimal? TransactionFeeRate { get; set; }
 
         public bool IsTransferrable { get; set; }
     }

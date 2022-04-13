@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using DraftKingsMarketplace.Api.Interfaces;
 using DraftKingsMarketplace.Api.Models;
+using MediatR;
 
 namespace DraftKingsMarketplace.Api.Queries
 {
-    public class CollectibleDropsQuery : IQuery<IEnumerable<CollectibleDrop>>
+    public class CollectibleDropsQuery : IRequest<List<CollectibleDrop>>
     {
         public CollectibleDropsQuery()
         {

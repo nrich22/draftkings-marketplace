@@ -37,7 +37,7 @@ BEGIN
         AssetMediaType VARCHAR(255),
         PartnerAssetUrl VARCHAR(255),
         SupplierTermsOfServiceUrl VARCHAR(255),
-        RoyaltyFeeRate VARCHAR(255),
+        RoyaltyFeeRate DECIMAL,
         RarityCallout VARCHAR(255),
         TransactionFeeRate DECIMAL,
         IsTransferrable BIT
