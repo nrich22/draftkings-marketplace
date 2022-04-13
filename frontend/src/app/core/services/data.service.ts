@@ -108,7 +108,6 @@ export class DataService {
    *  to the end of the request URL
    */
   protected _get<T>(endpoint: string, params?: QueryParams): Observable<T> {
-    console.log(this._jsonHeaders);
     this.checkEndpoint(endpoint);
     return this.http
       .get<T>(
