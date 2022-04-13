@@ -10,6 +10,13 @@ Technologies used in this full-stack web application (Pre-reqs):
 * Docker version 20.10.11
 * SQL Server
 
+Features and Design:
+* Responsive Design for Mobile Web
+* Navigate to DK Account, DK Shop and DK Contact
+* View Drops
+* View Drop NFT
+* Toggle Between Light and Dark Mode
+
 ### Clone the repo
 
 ```shell
