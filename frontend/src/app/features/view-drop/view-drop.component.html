@@ -1,6 +1,11 @@
-<div *ngIf="collectibleDrop; else loadingSpinner" class="ViewDropComponent" fxLayout="row" fxLayoutAlign="center center">
+<div *ngIf="collectibleDrop; else loadingSpinner" class="ViewDropComponent" fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign.gt-md="center center">
     <img fxFlex=50 src="{{collectibleDrop.thumbnailUrl}}" alt="NFT Image">
-    <div fxFlex=50 class="ViewDropComponent-details" fxLayout="column" fxLayoutAlign="start start">
+    <div fxFlex.gt-md=50 
+        fxFlex.lt-md=80
+        class="ViewDropComponent-details"
+        fxLayout="column"
+        fxLayoutAlign.gt-md="start start"
+        fxLayoutAlign.lt-md="start center">
         <p class="ViewDropComponent-collection">{{collectibleDrop.collectionName}}</p>
         <h1>{{collectibleDrop.name}}</h1>
         <p class="ViewDropComponent-price">${{collectibleDrop.salePrice}}</p>

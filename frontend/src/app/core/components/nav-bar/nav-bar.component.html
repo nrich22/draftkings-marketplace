@@ -8,7 +8,7 @@
             <button fxHide.lt-md mat-button [routerLink]="'portfolio'">Portfolio</button>
         </div>
         <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-            <div class="NavBarComponent-balance" fxLayout="row" fxLayoutGap="8px">
+            <div fxHide.lt-md class="NavBarComponent-balance" fxLayout="row" fxLayoutGap="8px">
                 <p>Balance:</p>
                 <p>$0.00</p>
             </div>
@@ -55,10 +55,30 @@
                     <mat-icon>menu</mat-icon>
                 </button>
                 <mat-menu #mobileMenu="matMenu">
-                    <button mat-menu-item>Drops</button>
-                    <button mat-menu-item>Auction</button>
-                    <button mat-menu-item>Browse</button>
-                    <button mat-menu-item>Portfolio</button>
+                    <button mat-menu-item [routerLink]="''">Drops</button>
+                    <button mat-menu-item [routerLink]="'auction'">Auction</button>
+                    <button mat-menu-item [routerLink]="'brose'">Browse</button>
+                    <button mat-menu-item [routerLink]="'portfolio'">Portfolio</button>
+                    <a mat-menu-item 
+                        href="https://myaccount.draftkings.com/login?intendedSiteExp=US-MKT&returnPath=/"
+                        target="_blank">
+                        Account Information
+                    </a>
+                    <a  mat-menu-item 
+                        href="https://www.shopdraftkings.com/?_gl=1*5i4ryt*_ga*MjA4ODM1NTM2OS4xNjQ5MzcwMzE3*_ga_QG8WHJSQMJ*MTY0OTQ0MTc1OC4zLjEuMTY0OTQ0Mjg0MC4w"
+                        target="_blank">
+                        DK Shop
+                    </a>
+                    <a mat-menu-item
+                        href="https://help.draftkings.com/hc/en-us"
+                        target="_blank">
+                        Contact Us
+                    </a>
+                    <a mat-menu-item 
+                        href="https://myaccount.draftkings.com/login?intendedSiteExp=US-MKT&returnPath=/"
+                        target="_blank">
+                        Sign Out
+                    </a>
                 </mat-menu>
             </div>
         </div>
