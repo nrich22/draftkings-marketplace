@@ -26,7 +26,7 @@ cd draftkings-marketplace
 
 ### Create SQL Server Database using SQL Sever Management (Windows)
 
-If you are on Windows it will be easier to use Microsft SQL Sever Management Studio. Create an instance and execute the db scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
+If you are on Windows it will be easier to use Microsft SQL Sever Management Studio. Create a local instance and execute the db scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
 
 ### Create SQL Server Database using Docker (Mac)
 
@@ -37,7 +37,7 @@ Create sql_server container with following command:
 docker run -d --name sql_server -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=someThingComplicated1234' -p 1433:1433 mcr.microsoft.com/mssql/server:2019-latest
 ```
 
-Connect to sql server container using sql cli, Microsoft SQL Sever, Azure Data Studio or Visual Studio Code.
+Connect to sql server instance container using sql cli, Azure Data Studio or Visual Studio Code. (I use Visual Studio Code.)
 
 To use sql cli run the following commands:
 
@@ -49,6 +49,8 @@ mssql -u sa -p someThingComplicated1234
 Execute scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
 
 ### Run .NET API Project
+
+Make sure db instance is running.
 
 Open draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api.sln in Visual Studio and Set DraftKingsMarketplace.Api as Start Up Project. Run Project in Visual Studio and wait for
 new browser tab to open to https://localhost:5001/api/marketplace.
