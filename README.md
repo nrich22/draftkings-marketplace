@@ -13,7 +13,7 @@ Technologies used in this full-stack web application (Pre-reqs):
 Features and Design:
 * Responsive Design for Mobile Web
 * Navigate to DK Account, DK Shop and DK Contact
-* View Drops
+* View Drops and Polygon Blockchain Token via Polyscan
 * View Drop NFT
 * Toggle Between Light and Dark Mode
 
