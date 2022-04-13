@@ -6,6 +6,8 @@ namespace DraftKingsMarketplace.Api.Models
 	{
 		public DbSet<CollectibleDrop> Drops { get; set; }
 
+		public DbSet<Banner> Banners { get; set; }
+
 		public DraftKingsDbContext(DbContextOptions<DraftKingsDbContext> options) : base(options)
 		{ }
 	}

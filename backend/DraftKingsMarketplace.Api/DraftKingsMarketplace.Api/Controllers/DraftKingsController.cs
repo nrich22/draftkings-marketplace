@@ -25,6 +25,15 @@ namespace DraftKingsMarketplace.Api.Controllers
         }
 
         [HttpGet]
+        [Route("banner")]
+        public async Task<ActionResult> GetBanner()
+        {
+            var banner = await _mediator.Send(new BannerQuery());
+
+            return Ok(banner);
+        }
+
+        [HttpGet]
         [Route("drops")]
         public async Task<ActionResult> GetDrops()
         {
