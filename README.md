@@ -17,7 +17,11 @@ git clone https://github.com/nrich22/draftkings-marketplace.git
 cd draftkings-marketplace
 ```
 
-### Create SQL Server Database using Docker
+### Create SQL Server Database in SQL Sever Management (Windows)
+
+If you are on Windows it will be easier to use Microsft SQL Sever Management Studio. Create an instance and execute the db scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
+
+### Create SQL Server Database using Docker (Mac)
 
 Make sure docker cli is installed.
 Create sql_server container with following command:
@@ -35,7 +39,7 @@ npm install -g sql-cli
 mssql -u sa -p someThingComplicated1234
 ```
 
-Execute scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create database and tables.
+Execute scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
 
 ### Run .NET API Project
 
