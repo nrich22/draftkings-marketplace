@@ -12,13 +12,15 @@ import { FeaturesRoutingModule } from './features-routing.module';
 import { AuctionComponent } from './auction/auction.component';
 import { BrowseComponent } from './browse/browse.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ViewDropComponent } from './view-drop/view-drop.component';
 
 @NgModule({
   declarations: [
     DropsComponent,
     AuctionComponent,
     BrowseComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ViewDropComponent
   ],
   imports: [
     CommonModule,

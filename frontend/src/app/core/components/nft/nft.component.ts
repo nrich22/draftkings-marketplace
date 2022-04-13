@@ -7,7 +7,7 @@ import { CollectibleDrop } from '../../models/collectibleDrops';
   styleUrls: ['./nft.component.scss']
 })
 export class NftComponent implements OnInit {
-  @Input() collectibleDrop!: CollectibleDrop;
+  @Input() collectibleDrop !: CollectibleDrop;
 
   constructor() { }
 
