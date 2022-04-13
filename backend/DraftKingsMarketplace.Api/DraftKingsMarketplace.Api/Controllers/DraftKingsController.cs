@@ -41,5 +41,14 @@ namespace DraftKingsMarketplace.Api.Controllers
 
             return Ok(drops);
         }
+
+        [HttpGet]
+        [Route("drops/{id}")]
+        public async Task<ActionResult> GetDropById(int id)
+        {
+            var drops = await _mediator.Send(new CollectibleDropQuery(id));
+
+            return Ok(drops);
+        }
     }
 }
