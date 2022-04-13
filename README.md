@@ -24,7 +24,7 @@ git clone https://github.com/nrich22/draftkings-marketplace.git
 cd draftkings-marketplace
 ```
 
-### Create SQL Server Database in SQL Sever Management (Windows)
+### Create SQL Server Database using SQL Sever Management (Windows)
 
 If you are on Windows it will be easier to use Microsft SQL Sever Management Studio. Create an instance and execute the db scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
 
@@ -59,7 +59,7 @@ new browser tab to open to https://localhost:5001/api/marketplace.
 Install the `npm` packages described in the `package.json` and verify that it works:
 
 ```shell
-cd fronted
+cd frontend
 npm install
 npm start
 ```
