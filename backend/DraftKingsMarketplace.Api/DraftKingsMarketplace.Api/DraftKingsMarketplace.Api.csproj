@@ -16,6 +16,8 @@
     <None Remove="Database\" />
     <None Remove="MediatR" />
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Scripts\sprocs\" />
+    <None Remove="Scripts\up\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +25,8 @@
     <Folder Include="Queries\" />
     <Folder Include="QueryHandlers\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Scripts\sprocs\" />
+    <Folder Include="Scripts\up\" />
   </ItemGroup>
 
   <ItemGroup>
