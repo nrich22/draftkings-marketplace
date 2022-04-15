@@ -17,6 +17,11 @@ Features and Design:
 * View Drop NFT
 * Toggle Between Light and Dark Mode
 
+Next Steps:
+* Set up Roundhouse for DB Creation
+* Autogenerate frontend services using swagger.json
+* Add JWT Authentication
+
 ### Clone the repo
 
 ```shell
@@ -26,7 +31,7 @@ cd draftkings-marketplace
 
 ### Create SQL Server Database using SQL Sever Management (Windows)
 
-If you are on Windows it will be easier to use Microsft SQL Sever Management Studio. Create a local instance and execute the db scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
+If you are on Windows it will be easier to use Microsft SQL Sever Management Studio. Create a local instance and execute the db scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts/up in order to create the database and tables.
 
 ### Create SQL Server Database using Docker (Mac)
 
@@ -46,7 +51,7 @@ npm install -g sql-cli
 mssql -u sa -p someThingComplicated1234
 ```
 
-Execute scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/Scripts in order to create the database and tables.
+Execute scripts located in draftkings-marketplace/backend/DraftKingsMarketplace.Api/DraftKingsMarketplace.Api/up Scripts in order to create the database and tables.
 
 ### Run .NET API Project
 
